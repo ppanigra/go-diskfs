@@ -122,6 +122,10 @@ const (
 	// blkpbszGet                       = 0x127b
 )
 
+func init() {
+	log.SetLevel(log.DebugLevel)
+}
+
 // Format represents the format of the disk
 type Format int
 

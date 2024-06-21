@@ -19,7 +19,9 @@ import (
 	"github.com/diskfs/go-diskfs/filesystem/squashfs"
 	"github.com/diskfs/go-diskfs/partition"
 )
-
+func init() {
+    log.SetLevel(log.DebugLevel)
+}
 // Disk is a reference to a single disk block device or image that has been Create() or Open()
 type Disk struct {
 	File              *os.File
